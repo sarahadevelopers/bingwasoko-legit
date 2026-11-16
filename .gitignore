@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Environment variables (Secrets)
+.env
+.env.local
+.env.*
+
+# Backup folders
+blog-backup/
+blog-brand-backup/
+blog-title-date-backup/
+
+# Editor settings
+.vscode/
+
+# Old / Dead Code
+critical-old.css
+script-old.js
+
+# OS generated files
+.DS_Store
+Thumbs.db

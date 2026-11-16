@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>{{title}} | BingwaSoko Blog</title>
+    <meta name="description" content="{{excerpt}}">
+    <meta name="keywords" content="Bingwa Sokoni, buy airtime online, Safaricom bundles, Airtel data, M-PESA Till, cheap bundles Kenya, Okoa Jahazi">
+    <link rel="canonical" href="https://bingwasoko.co.ke/blog/{{slug}}.html">
+    <link rel="icon" type="image/webp" href="/bingwa-sokoni-favicon.webp">
+<link rel="alternate icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Additional blog‑post styles */
+        .post-container { max-width: 800px; margin: 2rem auto; padding: 0 1.5rem; }
+        .post-header { text-align: center; margin-bottom: 2rem; }
+        .post-header h1 { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; }
+        .post-meta { color: var(--text-light); font-size: 0.85rem; margin-top: 0.5rem; }
+        .featured-image { width: 100%; border-radius: 20px; margin: 1rem 0 1.5rem; aspect-ratio: 16/9; object-fit: cover; }
+        .post-content { font-size: 1rem; line-height: 1.6; color: var(--text-primary); }
+        .post-content p { margin-bottom: 1.2rem; }
+        .post-content h2 { font-size: 1.5rem; margin: 1.5rem 0 1rem; }
+        .post-content ul, .post-content ol { margin-left: 1.5rem; margin-bottom: 1.2rem; }
+        .post-content li { margin-bottom: 0.5rem; }
+        .post-content img { max-width: 100%; height: auto; border-radius: 16px; margin: 1.5rem 0; }
+        .till-box { display: inline-flex; align-items: center; gap: 10px; background: #f9f9f9; padding: 8px 16px; border-radius: 50px; border: 1px solid #eee; margin: 1rem 0; }
+        #copyBtn { background: #1a1a1a; color: white; border: none; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; cursor: pointer; }
+        .trust-badge { display: flex; align-items: center; gap: 15px; background: #fdfdfd; border: 1px solid #e0e0e0; padding: 15px 25px; border-radius: 16px; margin: 2rem 0; }
+        .trust-badge h4 { margin: 0; font-size: 1rem; color: #1a1a1a; }
+        .trust-badge p { margin: 4px 0 0; font-size: 0.85rem; color: #666; }
+        .badge-icon { font-size: 24px; }
+        .cta-button { display: block; background: var(--safaricom); color: white; text-align: center; padding: 1rem; border-radius: 40px; font-weight: 700; text-decoration: none; margin: 2rem 0; transition: background 0.2s; }
+        .cta-button:hover { background: #007a3b; }
+        .related-posts { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eef2f6; }
+        .related-posts h3 { font-size: 1.2rem; margin-bottom: 1rem; }
+        .related-posts ul { list-style: none; padding: 0; }
+        .related-posts li { display: flex; align-items: center; gap: 12px; margin-bottom: 1rem; }
+        .related-posts img { width: 60px; height: 60px; object-fit: cover; border-radius: 12px; }
+        .related-posts a { color: var(--safaricom); text-decoration: none; font-weight: 600; }
+        .related-posts a:hover { text-decoration: underline; }
+        .related-date { font-size: 0.7rem; color: #666; margin-top: 4px; }
+        @media (max-width: 768px) {
+            .post-header h1 { font-size: 1.8rem; }
+            .post-container { padding: 0 1rem; }
+            .related-posts li { gap: 8px; }
+            .related-posts img { width: 50px; height: 50px; }
+        }
+    </style>
+<script src="https://www.google.com/recaptcha/api.js?render=6LcKDGEtAAAAAJKAWjXB7j5bSIPvzz94wBWapTD5"></script>
+        
+    <style>
+        /* Ensure floating filter bar never overlaps footer credits on any device */
+        .footer, .footer-bottom { 
+            padding-bottom: 75px !important; 
+        }
+    </style>
+    <style>
+        /* Floating Contact Buttons */
+        .floating-contact {
+            position: fixed;
+            bottom: 80px; /* Sits above the bottom filter bar */
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 999;
+        }
+        .floating-btn {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+        .floating-btn-wa {
+            background-color: #25D366; /* WhatsApp Green */
+        }
+        .floating-btn-call {
+            background-color: #009B4D; /* Safaricom Green */
+        }
+        .floating-btn svg {
+            width: 30px;
+            height: 30px;
+            fill: #fff;
+        }
+        @media (max-width: 768px) {
+            .floating-contact { bottom: 75px; right: 15px; gap: 10px; }
+            .floating-btn { width: 48px; height: 48px; }
+            .floating-btn svg { width: 26px; height: 26px; }
+        }
+    </style>
+<style>
+    /* Pulse animation for the Copy Till Button */
+    @keyframes tillPulse {
+        0% { box-shadow: 0 0 0 0 rgba(0, 155, 77, 0.4); }
+        70% { box-shadow: 0 0 0 8px rgba(0, 155, 77, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(0, 155, 77, 0); }
+    }
+    .header-btn-copy {
+        animation: tillPulse 2s infinite;
+        border-width: 2px !important;
+    }
+</style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <span class="bingwa">Bingwa</span><span class="soko">Soko</span>
+        </div>
+        <div class="tagline">The fastest way to buy bundles, even with Okoa.</div>
+        <div class="system-status">
+            <span class="pulse-dot"></span>
+            <span class="status-text">System Online • Instant Delivery</span>
+        </div>
+        <a href="https://wa.me/254700000000" class="whatsapp-icon" target="_blank" aria-label="WhatsApp Support">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12c0 1.89.52 3.64 1.43 5.15L2 22l4.85-1.43A9.97 9.97 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" fill="#25D366"/>
+                <path d="M12 6.5c-3.04 0-5.5 2.46-5.5 5.5 0 1.04.29 2.01.79 2.85L6.5 17.5l2.65-.79c.84.5 1.81.79 2.85.79 3.04 0 5.5-2.46 5.5-5.5S15.04 6.5 12 6.5z" fill="white"/>
+            </svg>
+        </a>
+    </header>
+
+    <div class="post-container">
+        <div class="post-header">
+            <h1>{{title}}</h1>
+            <div class="post-meta">📅 {{date}} | 🚀 Bingwa Sokoni</div>
+        </div>
+
+        <!-- Featured Image -->
+        <img src="{{image}}" alt="{{title}}" class="featured-image" loading="lazy">
+
+        <div class="post-content">
+            {{content}}
+        </div>
+
+        <!-- Copy Till Button -->
+        <div class="till-box">
+            <span>Till: <strong>509947</strong></span>
+            <button onclick="copyTill()" id="copyBtn">Copy</button>
+        </div>
+
+        <!-- Trust Badge -->
+        <div class="trust-badge">
+            <div class="badge-icon">🛡️</div>
+            <div class="badge-text">
+                <h4>Verified Merchant</h4>
+                <p>Official Bingwa Sokoni Payments via <strong>Till: 509947</strong>. Automated & Secure.</p>
+            </div>
+        </div>
+
+        <!-- Main CTA -->
+        <a href="../index.html" class="cta-button">🔥 Jisort Sasa – Buy Bundles Now</a>
+
+        <!-- Related Posts with Images -->
+        <div class="related-posts">
+            <h3>📖 You might also like</h3>
+            <ul>
+                {{relatedLinks}}
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3 class="footer-logo">Bingwa<span>Soko</span></h3>
+                <p>Your number one stop for instant, affordable bundles. No delays, no mambo mingi.</p>
+            
+
+    
+<p style="font-size: 0.75rem; color: #888; margin-top: 10px; line-height: 1.4;">
+    Payments securely processed via M-PESA Buy Goods Till <strong onclick="navigator.clipboard.writeText('1621614'); this.innerHTML='Copied ✅'; setTimeout(() => this.innerHTML='162 161 4', 2000);" style="color: #009B4D; font-size: 1.1em; cursor: pointer; text-decoration: underline; text-decoration-style: dotted;" title="Click to copy Till Number">162 161 4</strong> (Registered Business Name: <em>Bingwa Karndy Enterprises</em>).
+</p>
+    </div>
+            <div class="footer-support">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="https://wa.me/254700000000">WhatsApp Help</a></li>
+                    <li><a href="mailto:support@bingwasoko.co.ke">Email Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../faq.html">FAQs</a></li>
+                    <li><a href="../terms.html">Terms of Service</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+    <div style="display: flex; flex-direction: column; gap: 6px; align-items: center; text-align: center;">
+        <p class="disclaimer" style="font-size: 0.75rem; color: #888; margin: 0;">
+            Independent reseller platform – not affiliated with Safaricom.
+        </p>
+        <p class="developer-credits" style="font-size: 0.75rem; color: #999; margin: 0;">
+            Designed & Developed by <a href="https://sarahadevelopers.co.ke" target="_blank" rel="noopener" style="color: #009B4D; text-decoration: none; font-weight: bold;">Saraha Developers Ltd</a>.
+        </p>
+        <p style="font-size: 0.75rem; color: #666; margin: 0; font-weight: 500;">
+            &copy; 2026 Bingwa Sokoni.co.ke | Built for Speed.
+        </p>
+    </div>
+</div>
+    </footer>
+
+    <script>
+        function copyTill() {
+            navigator.clipboard.writeText("509947");
+            const btn = document.getElementById("copyBtn");
+            btn.innerText = "Copied! ✅";
+            setTimeout(() => btn.innerText = "Copy", 2000);
+        }
+    </script>
+    <!-- Floating Contact Buttons -->
+        <!-- Floating Contact Buttons -->
+    <div class="floating-contact">
+        <a href="https://wa.me/254725206054" target="_blank" rel="noopener" class="floating-btn floating-btn-wa" aria-label="Chat on WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <a href="tel:+254725206054" class="floating-btn floating-btn-call" aria-label="Call Support">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </a>
+    </div>
+</body>
+</html>

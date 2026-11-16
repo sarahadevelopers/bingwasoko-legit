@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>All Products – Safaricom Bundles, Data & Minutes | Bingwa Sokoni</title>
+
+    <meta name="description" content="Browse all Safaricom bundles – data, minutes, and SMS. Up to 60% off USSD prices. Okoa friendly, instant delivery via M-PESA Till 1621614.">
+
+    <meta name="keywords" content="Safaricom bundles, cheap data Kenya, buy minutes, SMS bundles, Okoa friendly, Bingwa Sokoni">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://bingwasoko.co.ke/products.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="All Products – Safaricom Bundles | Bingwa Sokoni">
+    <meta property="og:description" content="Browse all Safaricom bundles – data, minutes, and SMS. Up to 60% off USSD prices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bingwasoko.co.ke/products.html">
+    <meta property="og:image" content="https://bingwasoko.co.ke/assets/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="All Products – Safaricom Bundles | Bingwa Sokoni">
+    <meta name="twitter:description" content="Browse all Safaricom bundles – data, minutes, and SMS. Up to 60% off USSD prices.">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/webp" href="/bingwa-sokoni-favicon.webp">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/style-full.css">
+
+    <style>
+        /* ===== Products Page Styles ===== */
+        .products-page { max-width: 1200px; margin: 2rem auto; padding: 0 1.2rem; }
+        .products-header { text-align: center; margin-bottom: 2.5rem; }
+        .products-header h1 { font-size: 2.5rem; font-weight: 800; line-height: 1.2; }
+        .products-header p { color: var(--text-light); font-size: 1.1rem; margin-top: 0.5rem; }
+        .breadcrumbs { font-size: 0.85rem; color: #777; margin-bottom: 1.5rem; }
+        .breadcrumbs a { color: var(--safaricom); text-decoration: none; }
+        .breadcrumbs span { color: #999; }
+
+        /* ===== Filter Bar ===== */
+        .filter-bar-products { display: flex; overflow-x: auto; gap: 0.8rem; padding: 1rem; background: var(--bg-section); margin-bottom: 1.5rem; border-radius: 60px; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+        .filter-btn { background: transparent; border: none; padding: 0.6rem 1.4rem; border-radius: 40px; font-family: var(--font); font-weight: 600; font-size: 0.9rem; color: var(--text-primary); cursor: pointer; white-space: nowrap; transition: var(--transition); }
+        .filter-btn.active { background: var(--safaricom); color: #fff; }
+        .filter-btn:hover:not(.active) { background: rgba(0, 155, 77, 0.1); }
+
+        /* ===== Product Grid ===== */
+        .product-grid-directory { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .product-card-directory { background: var(--bg-main); border: 1px solid var(--border); border-radius: 24px; padding: 1.2rem; transition: var(--transition); display: flex; flex-direction: column; text-decoration: none; color: var(--text-primary); position: relative; }
+        .product-card-directory:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+        .product-card-directory .network-strip { height: 4px; width: 100%; border-radius: 4px 4px 0 0; margin-bottom: 1rem; background: var(--safaricom); }
+        .product-card-directory .card-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; }
+        .product-card-directory .product-title { font-weight: 800; font-size: 1.8rem; line-height: 1.2; letter-spacing: -0.02em; }
+        .product-card-directory .validity-badge { display: inline-block; background: var(--bg-section); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; padding: 0.25rem 0.8rem; border-radius: 20px; }
+        .product-card-directory .price-container { font-size: 1.4rem; font-weight: 500; margin-bottom: 0.5rem; }
+        .product-card-directory .currency { font-weight: 400; color: #666; }
+        .product-card-directory .price-value { color: var(--safaricom); }
+        .product-card-directory .okoa-badge { background: #f0f9f0; color: var(--safaricom); font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: 20px; display: inline-block; margin-bottom: 1rem; align-self: flex-start; }
+        .product-card-directory .view-btn { margin-top: auto; background: var(--safaricom); color: #fff; border: none; padding: 0.7rem; border-radius: 40px; font-family: var(--font); font-weight: 700; font-size: 0.9rem; cursor: pointer; transition: var(--transition); width: 100%; }
+        .product-card-directory .view-btn:hover { opacity: 0.85; transform: scale(1.02); }
+        .no-results { text-align: center; padding: 3rem; color: var(--text-light); }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            .products-header h1 { font-size: 1.9rem; }
+            .product-grid-directory { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+            .product-card-directory .product-title { font-size: 1.3rem; }
+            .product-card-directory .price-container { font-size: 1.2rem; }
+            .filter-bar-products { padding: 0.8rem 1rem; }
+            .filter-btn { font-size: 0.8rem; padding: 0.4rem 1rem; }
+        }
+        @media (max-width: 480px) {
+            .product-grid-directory { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+            .product-card-directory { padding: 0.6rem; }
+            .product-card-directory .product-title { font-size: 0.85rem; }
+            .product-card-directory .price-container { font-size: 0.8rem; }
+            .product-card-directory .validity-badge { font-size: 0.5rem; padding: 0.1rem 0.4rem; }
+            .product-card-directory .okoa-badge { font-size: 0.5rem; padding: 0.1rem 0.4rem; }
+            .product-card-directory .view-btn { font-size: 0.65rem; padding: 0.4rem; }
+            .product-card-directory .card-header { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
+        }
+    </style>
+
+    <!-- JSON-LD Schema: Product Collection -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "All Safaricom Bundles",
+      "description": "Browse all Safaricom bundles – data, minutes, and SMS. Up to 60% off USSD prices.",
+      "url": "https://bingwasoko.co.ke/products.html",
+      "about": {
+        "@type": "Thing",
+        "name": "Mobile bundles, data, minutes, SMS"
+      }
+    }
+    </script>
+    
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcKDGEtAAAAAJKAWjXB7j5bSIPvzz94wBWapTD5"></script>
+        
+    <style>
+        /* Ensure floating filter bar never overlaps footer credits on any device */
+        .footer, .footer-bottom { padding-bottom: 75px !important; }
+        
+        /* Floating Contact Buttons */
+        .floating-contact { position: fixed; bottom: 80px; right: 20px; display: flex; flex-direction: column; gap: 12px; z-index: 999; }
+        .floating-btn { width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); text-decoration: none; transition: transform 0.2s ease; }
+        .floating-btn:hover { transform: scale(1.1); }
+        .floating-btn-wa { background-color: #25D366; }
+        .floating-btn-call { background-color: #009B4D; }
+        .floating-btn svg { width: 30px; height: 30px; fill: #fff; }
+        @media (max-width: 768px) {
+            .floating-contact { bottom: 75px; right: 15px; gap: 10px; }
+            .floating-btn { width: 48px; height: 48px; }
+            .floating-btn svg { width: 26px; height: 26px; }
+        }
+    </style>
+<style>
+    /* Pulse animation for the Copy Till Button */
+    @keyframes tillPulse {
+        0% { box-shadow: 0 0 0 0 rgba(0, 155, 77, 0.4); }
+        70% { box-shadow: 0 0 0 8px rgba(0, 155, 77, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(0, 155, 77, 0); }
+    }
+    .header-btn-copy {
+        animation: tillPulse 2s infinite;
+        border-width: 2px !important;
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="logo">
+            <span class="bingwa">Bingwa</span><span class="soko">Sokoni</span>
+        </div>
+        <div class="tagline">The fastest way to buy bundles, even with Okoa.</div>
+        <div class="system-status">
+            <span class="pulse-dot"></span>
+            <span class="status-text">System Online • Instant Delivery</span>
+        </div>
+        <a href="https://wa.me/254725206054" class="whatsapp-icon" target="_blank" aria-label="WhatsApp Support" style="line-height:0">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12c0 1.89.52 3.64 1.43 5.15L2 22l4.85-1.43A9.97 9.97 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" fill="#25D366"/>
+                <path d="M12 6.5c-3.04 0-5.5 2.46-5.5 5.5 0 1.04.29 2.01.79 2.85L6.5 17.5l2.65-.79c.84.5 1.81.79 2.85.79 3.04 0 5.5-2.46 5.5-5.5S15.04 6.5 12 6.5z" fill="white"/>
+            </svg>
+        </a>
+    </header>
+
+    <!-- ===== PRODUCTS PAGE ===== -->
+    <div class="products-page">
+
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="/">Home</a> › <span>Products</span>
+        </div>
+
+        <!-- Header -->
+        <div class="products-header">
+            <h1>All Bundles</h1>
+            <p>Browse all Safaricom bundles – data, minutes, and SMS</p>
+        </div>
+
+        <!-- Filters -->
+        <div class="filter-bar-products" id="filterBarProducts">
+            <button class="filter-btn active" data-filter="all">All Packages</button>
+            <button class="filter-btn" data-filter="data">📶 Data</button>
+            <button class="filter-btn" data-filter="minutes">📞 Minutes</button>
+            <button class="filter-btn" data-filter="sms">💬 SMS</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid-directory" id="productGridDirectory">
+            <!-- Products will be loaded here by JavaScript -->
+            <div class="no-results">Loading products...</div>
+        </div>
+
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3 class="footer-logo">Bingwa<span>Sokoni</span></h3>
+                <p>Your number one stop for instant, affordable Safaricom bundles. Secure payments via M-PESA Till 1621614.</p>
+            
+
+    
+<p style="font-size: 0.75rem; color: #888; margin-top: 10px; line-height: 1.4;">
+    Payments securely processed via M-PESA Buy Goods Till <strong onclick="navigator.clipboard.writeText('1621614'); this.innerHTML='Copied ✅'; setTimeout(() => this.innerHTML='162 161 4', 2000);" style="color: #009B4D; font-size: 1.1em; cursor: pointer; text-decoration: underline; text-decoration-style: dotted;" title="Click to copy Till Number">162 161 4</strong> (Registered Business Name: <em>Bingwa Karndy Enterprises</em>).
+</p>
+    </div>
+            <div class="footer-support">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="https://wa.me/254725206054">WhatsApp Help</a></li>
+                    <li><a href="mailto:support@bingwasoko.co.ke">Email Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/blog.html">Blogs</a></li>
+                    <li><a href="/faq.html">FAQs</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+    <div style="display: flex; flex-direction: column; gap: 6px; align-items: center; text-align: center;">
+        <p class="disclaimer" style="font-size: 0.75rem; color: #888; margin: 0;">
+            Independent reseller platform – not affiliated with Safaricom.
+        </p>
+        <p class="developer-credits" style="font-size: 0.75rem; color: #999; margin: 0;">
+            Designed & Developed by <a href="https://sarahadevelopers.co.ke" target="_blank" rel="noopener" style="color: #009B4D; text-decoration: none; font-weight: bold;">Saraha Developers Ltd</a>.
+        </p>
+        <p style="font-size: 0.75rem; color: #666; margin: 0; font-weight: 500;">
+            &copy; 2026 Bingwa Sokoni.co.ke | Built for Speed.
+        </p>
+    </div>
+</div>
+    </footer>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact">
+        <a href="https://wa.me/254725206054" target="_blank" rel="noopener" class="floating-btn floating-btn-wa" aria-label="Chat on WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <a href="tel:+254725206054" class="floating-btn floating-btn-call" aria-label="Call Support">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </a>
+    </div>
+
+    <!-- Night Mode Banner Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const hour = new Date().getHours();
+            if (hour >= 19 && hour < 23) {
+                const banner = document.createElement("div");
+                banner.style.background = "#1A1A1A";
+                banner.style.color = "#FFF";
+                banner.style.textAlign = "center";
+                banner.style.padding = "10px";
+                banner.style.fontSize = "0.85rem";
+                banner.style.fontWeight = "bold";
+                banner.innerHTML = "🌙 <strong>Night Mode Active (7PM - 11PM):</strong> 1GB @ 19, 1GB Tunukiwa @ 22, and 1.5GB @ 52 are currently unavailable. Please check our other great offers!";
+                
+                const header = document.querySelector("header");
+                header.parentNode.insertBefore(banner, header.nextSibling);
+            }
+        });
+    </script>
+
+    <!-- Product Data & Logic -->
+    <script>
+        const products = [
+            { id: 1, network: "Safaricom", type: "data", title: "1GB", validity: "1 Hour", price: 19, slug: "safaricom-1-gb-1-hour-5" },
+            { id: 2, network: "Safaricom", type: "data", title: "250MB", validity: "24 Hours", price: 20, slug: "safaricom-500-mb-24-hours-7" },
+            { id: 3, network: "Safaricom", type: "data", title: "400MB", validity: "7 Days", price: 49, slug: "safaricom-600-mb-7-days-6" },
+            { id: 4, network: "Safaricom", type: "data", title: "1GB", validity: "Till Midnight", price: 55, slug: "safaricom-1-gb-24-hours-11" },
+            { id: 5, network: "Safaricom", type: "data", title: "1.5GB", validity: "24 Hours", price: 99, slug: "safaricom-25-gb-24-hours-2" },
+            { id: 6, network: "Safaricom", type: "data", title: "1.5GB", validity: "3 Hours", price: 52, slug: "safaricom-15-gb-3-hours-4" },
+            { id: 7, network: "Safaricom", type: "data", title: "1GB Tunukiwa", validity: "1 Hour", price: 22, slug: "safaricom-125-gb-midnight-1" },
+            { id: 8, network: "Safaricom", type: "data", title: "750MB + 50 SMS", validity: "24 Hours", price: 50, slug: "safaricom-14-gb-7-days-8" },
+            { id: 9, network: "Safaricom", type: "data", title: "1.5GB Tunukiwa", validity: "24 Hours", price: 105, slug: "safaricom-15-gb-6-hours-9" },
+            { id: 10, network: "Safaricom", type: "minutes", title: "45 Mins", validity: "3 Hours", price: 23, slug: "safaricom-45-mins-3-hours-17" },
+            { id: 11, network: "Safaricom", type: "minutes", title: "60 Mins", validity: "Till Midnight", price: 53, slug: "safaricom-50-mins-midnight-16" },
+            { id: 12, network: "Safaricom", type: "minutes", title: "100 Mins", validity: "Till Midnight", price: 100, slug: "safaricom-100-mins-2-days-15" },
+            { id: 13, network: "Safaricom", type: "minutes", title: "250 Mins", validity: "7 Days", price: 210, slug: "safaricom-250-mins-7-days-12" },
+            { id: 14, network: "Safaricom", type: "minutes", title: "300 Mins", validity: "30 Days", price: 500, slug: "safaricom-300-mins-30-days-14" },
+            { id: 15, network: "Safaricom", type: "minutes", title: "800 Mins", validity: "30 Days", price: 980, slug: "safaricom-800-mins-30-days-13" },
+            { id: 16, network: "Safaricom", type: "minutes", title: "1250 Mins", validity: "30 Days", price: 1050, slug: "safaricom-1250-mins-30-days-22" },
+            { id: 17, network: "Safaricom", type: "data", title: "2.5GB", validity: "30 Days", price: 250, slug: "safaricom-7-gb-7-days-3" },
+            { id: 18, network: "Safaricom", type: "data", title: "7GB", validity: "30 Days", price: 495, slug: "safaricom-300-mb-24-hours-10" },
+            { id: 19, network: "Safaricom", type: "data", title: "8GB + 400 Mins", validity: "30 Days", price: 1000, slug: "safaricom-150-mins-2gb-7-days-23" },
+            { id: 20, network: "Safaricom", type: "data", title: "21GB", validity: "30 Days", price: 1010, slug: "safaricom-1700-mins-30-days-20" },
+            { id: 21, network: "Safaricom", type: "sms", title: "20 SMS", validity: "1 Day", price: 5, slug: "safaricom-20-sms-24-hours-25" },
+            { id: 22, network: "Safaricom", type: "sms", title: "200 SMS", validity: "1 Day", price: 10, slug: "safaricom-150-calls-sms-no-expiry-18" },
+            { id: 23, network: "Safaricom", type: "sms", title: "1000 SMS", validity: "7 Days", price: 30, slug: "safaricom-60-calls-sms-no-expiry-19" },
+            { id: 24, network: "Safaricom", type: "sms", title: "1500 SMS", validity: "30 Days", price: 101, slug: "safaricom-550-mins-6gb-30-days-24" }
+        ];
+
+        function isNightTime() {
+            const hour = new Date().getHours();
+            return hour >= 19 && hour < 23; // 7 PM to 11 PM
+        }
+
+        function renderProducts(filter = 'all') {
+            const grid = document.getElementById('productGridDirectory');
+            let filtered = products;
+
+            if (filter !== 'all') {
+                filtered = filtered.filter(p => p.type === filter);
+            }
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `<div class="no-results">No products found. Try another filter.</div>`;
+                return;
+            }
+
+            const isNight = isNightTime();
+            const nightRestrictedIds = [1, 6, 7]; // IDs for 1GB@19, 1.5GB@52, 1GB Tunukiwa@22
+
+            grid.innerHTML = filtered.map(product => {
+                const isUnavailable = isNight && nightRestrictedIds.includes(product.id);
+                
+                return `
+                <a href="${isUnavailable ? '#' : '/product/' + product.slug + '.html'}" class="product-card-directory safaricom" style="${isUnavailable ? 'opacity: 0.6; pointer-events: none;' : ''}">
+                    <div class="network-strip"></div>
+                    <div class="card-header">
+                        <span class="product-title">${product.title}</span>
+                        <span class="validity-badge">${product.validity}</span>
+                    </div>
+                    <div class="price-container">
+                        <span class="currency">Ksh</span>
+                        <span class="price-value">${product.price}</span>
+                    </div>
+                    <div class="okoa-badge">✅ Okoa Friendly</div>
+                    <button class="view-btn" style="${isUnavailable ? 'background: #999;' : ''}">
+                        ${isUnavailable ? 'Unavailable (7PM-11PM)' : 'View Bundle →'}
+                    </button>
+                    ${isUnavailable ? '<div style="font-size: 0.7rem; color: #E10000; text-align: center; margin-top: 0.5rem;">Try 250MB @ 20</div>' : ''}
+                </a>
+                `;
+            }).join('');
+        }
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                const filter = this.dataset.filter;
+                renderProducts(filter);
+            });
+        });
+
+        renderProducts('all');
+    </script>
+
+</body>
+</html>

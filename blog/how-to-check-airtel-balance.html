@@ -1,0 +1,726 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>How to Check Airtel Airtime Balance – USSD Code &amp; MyAirtel App Guide | Bingwa Sokoni Blog</title>
+
+    <meta name="description" content="Learn how to check your Airtel airtime balance using USSD (*544#), the MyAirtel app, and SMS. Also covers data balance, minutes, and how to buy bundles with Okoa (Pewa) debt.">
+
+    <meta name="keywords" content="check Airtel balance, Airtel airtime balance, Airtel USSD code, check Airtel data balance, Airtel Okoa, Bingwa Sokoni">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://bingwasoko.co.ke/blog/how-to-check-airtel-balance.html">
+    <link rel="icon" type="image/webp" href="/bingwa-sokoni-favicon.webp">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="How to Check Airtel Airtime Balance – USSD Code &amp; MyAirtel App Guide">
+    <meta property="og:description" content="Learn how to check your Airtel airtime balance using USSD (*544#), the MyAirtel app, and SMS. Also covers data balance, minutes, and how to buy bundles with Okoa (Pewa) debt.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bingwasoko.co.ke/blog/how-to-check-airtel-balance.html">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo8abLBhpjJ4R4Ieidzm2VlKWzWtIlpkbPWQ&amp;s">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Check Airtel Airtime Balance">
+    <meta name="twitter:description" content="USSD code, MyAirtel app, SMS – plus how to buy bundles with Okoa debt.">
+    <meta name="twitter:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo8abLBhpjJ4R4Ieidzm2VlKWzWtIlpkbPWQ&amp;s">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="../style-full.css">
+
+    <style>
+        /* Preserved original styling + added TOC/FAQ/author/trust styles */
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{--bg-main:#FFF;--bg-section:#F4F7F6;--text-primary:#1A1A1A;--text-light:#5c5c5c;--border:#eaeaea;--shadow-sm:0 4px 12px rgba(0,0,0,0.04);--shadow-hover:0 12px 24px rgba(0,0,0,0.08);--font:Jost,-apple-system,BlinkMacSystemFont,sans-serif;--transition:all .2s ease;--safaricom:#009B4D;--airtel:#E10000;--utility:#FFCC00}
+        body{background:var(--bg-main);color:var(--text-primary);font-family:var(--font);font-weight:300;line-height:1.5;-webkit-font-smoothing:antialiased}
+        .header{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;padding:1rem 2rem;background:var(--bg-main);border-bottom:1px solid var(--border)}
+        .logo{font-size:2rem;font-weight:900;letter-spacing:-.5px}
+        .bingwa{color:var(--text-primary)}
+        .soko{color:var(--safaricom)}
+        .tagline{font-weight:300;font-size:.9rem;color:var(--text-light);margin-left:1rem;white-space:nowrap}
+        .system-status{display:flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:500;color:var(--safaricom)}
+        .pulse-dot{width:8px;height:8px;background-color:var(--safaricom);border-radius:50%;display:inline-block;box-shadow:0 0 0 rgba(0,155,77,0.4);animation:pulse 2s infinite}
+        @keyframes pulse{0%{transform:scale(.95);box-shadow:0 0 0 0 rgba(0,155,77,0.7)}70%{transform:scale(1);box-shadow:0 0 0 8px rgba(0,155,77,0)}100%{transform:scale(.95);box-shadow:0 0 0 0 rgba(0,155,77,0)}}
+        .post-container{max-width:850px;margin:2rem auto;padding:0 1.2rem}
+        .breadcrumbs{font-size:0.85rem;color:#777;margin-bottom:1rem}
+        .breadcrumbs a{color:var(--safaricom);text-decoration:none}
+        .breadcrumbs ol{display:flex;flex-wrap:wrap;gap:0.5rem;list-style:none}
+        .breadcrumbs li:not(:last-child)::after{content:"›";margin-left:0.5rem}
+        .post-header{text-align:center;margin-bottom:2rem}
+        .post-header h1{font-size:2.5rem;font-weight:800;line-height:1.2}
+        .post-meta{color:#777;margin-top:0.8rem;font-size:0.9rem}
+        .featured-image{width:100%;border-radius:24px;margin:1.5rem 0}
+        .post-content{font-size:1rem;line-height:1.8}
+        .post-content h2{margin-top:2rem;margin-bottom:1rem;font-size:1.5rem}
+        .post-content p{margin-bottom:1.2rem}
+        .post-content ul,.post-content ol{margin-left:1.5rem;margin-bottom:1.5rem}
+        .post-content li{margin-bottom:0.7rem}
+        .info-box{background:#eef8ff;border-left:5px solid var(--safaricom);padding:1rem 1.2rem;border-radius:16px;margin:1.5rem 0}
+        .steps-box{background:#f8f8f8;border:1px solid #ececec;border-radius:18px;padding:1.2rem;margin:1.5rem 0}
+        .warning-box{background:#FFF7E5;border-left:6px solid #ff9800;padding:1rem 1.2rem;border-radius:16px;margin:1.5rem 0}
+        .soft-cta{background:#E8F5E9;border-radius:16px;padding:1rem;margin:1.5rem 0;text-align:center}
+        .table-responsive{overflow-x:auto;margin:1.5rem 0}
+        .comparison-table{width:100%;border-collapse:collapse;background:white;border-radius:16px;overflow:hidden}
+        .comparison-table th,.comparison-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--border)}
+        .comparison-table th{background:#f0f2f5;font-weight:700}
+        .cta-button{display:block;text-align:center;background:var(--safaricom);color:white;text-decoration:none;padding:1rem;border-radius:50px;font-weight:700;margin:2rem 0;transition:0.2s ease}
+        .cta-button:hover{background:#007a3b}
+        .till-box{background:#f8f8f8;border-radius:60px;display:flex;align-items:center;justify-content:space-between;padding:0.8rem 1.5rem;margin:1.5rem 0;border:1px solid var(--border)}
+        .till-box strong{font-size:1.6rem;color:var(--safaricom)}
+        .till-box button{background:#111;color:white;border:none;padding:6px 20px;border-radius:40px;cursor:pointer;font-weight:600}
+        .trust-badge{display:flex;gap:1rem;align-items:center;background:#F4F7F6;border-radius:24px;padding:1rem 1.5rem;margin:1.8rem 0}
+        .badge-icon{font-size:2rem}
+        .author-box{display:flex;gap:1rem;align-items:center;background:#F4F7F6;padding:1.2rem;border-radius:28px;margin:2rem 0}
+        .author-box img{border-radius:50%;object-fit:cover}
+        .related-posts{margin-top:3rem;border-top:1px solid var(--border);padding-top:2rem}
+        .related-posts ul{list-style:none}
+        .related-posts li{display:flex;gap:12px;margin-bottom:1rem;align-items:center}
+        .related-posts img{width:65px;height:65px;border-radius:12px;object-fit:cover}
+        .related-posts a{color:var(--safaricom);font-weight:600;text-decoration:none}
+        .faq-item{margin-bottom:1.5rem;border-bottom:1px solid var(--border);padding-bottom:1rem}
+        .faq-item strong{font-weight:700;display:block;margin-bottom:0.4rem}
+        .table-of-contents{background:var(--bg-section, #F4F7F6);border-radius:20px;padding:1.2rem 1.8rem;margin:1.8rem 0;border-left:5px solid var(--safaricom, #009B4D)}
+        .table-of-contents h3{margin-bottom:0.8rem;font-weight:700}
+        .table-of-contents ul{list-style:none;display:flex;flex-wrap:wrap;gap:0.6rem 1.2rem}
+        .table-of-contents li a{text-decoration:none;color:var(--safaricom, #009B4D);font-weight:500}
+        @media(max-width:768px){.post-header h1{font-size:1.9rem} table{font-size:0.9rem}}
+    </style>
+    <style>
+        /* ===== Popular Packages ===== */
+        .popular-packages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .popular-package {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 1.4rem 0.8rem;
+            border: 1px solid #eef2f6;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+            text-decoration: none;
+            color: #1a1a1a;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            height: 100%;
+            min-height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+        .popular-package:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+            border-color: #d0d9e6;
+        }
+        .popular-package .p-name {
+            font-weight: 700;
+            font-size: 1.15rem;
+            margin-bottom: 2px;
+            color: #111827;
+        }
+        .popular-package .p-price {
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: var(--safaricom, #009B4D);
+            margin-bottom: 2px;
+        }
+        .popular-package .p-validity {
+            font-size: 0.75rem;
+            color: #64748b;
+            margin-bottom: 6px;
+        }
+        .popular-package .p-badge {
+            font-size: 0.6rem;
+            font-weight: 700;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            background: #dcfce7;
+            color: #166534;
+            margin-bottom: 12px;
+            display: inline-block;
+            letter-spacing: 0.3px;
+        }
+        .popular-package.airtel .p-price {
+            color: var(--airtel, #E10000);
+        }
+        .popular-package.airtel .p-badge {
+            background: #fef2f2;
+            color: #991b1b;
+        }
+        .popular-package .p-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            background: var(--safaricom, #009B4D);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 0.8rem;
+            padding: 8px 24px;
+            border-radius: 50px;
+            letter-spacing: 0.4px;
+            transition: all 0.2s ease;
+            width: auto;
+            min-width: 120px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(0, 155, 77, 0.25);
+            margin-top: 4px;
+            background: #0f7b3a;
+        }
+        .popular-package:hover .p-cta {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 155, 77, 0.35);
+            background: #00632e;
+        }
+        .popular-package.airtel .p-cta {
+            background: #cc0000;
+            box-shadow: 0 4px 10px rgba(225, 0, 0, 0.25);
+        }
+        .popular-package.airtel:hover .p-cta {
+            background: #a30000;
+            box-shadow: 0 8px 20px rgba(225, 0, 0, 0.35);
+        }
+        .popular-package::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--safaricom, #009B4D);
+            border-radius: 20px 20px 0 0;
+            opacity: 0.6;
+            transition: opacity 0.2s;
+        }
+        .popular-package.airtel::before {
+            background: var(--airtel, #E10000);
+        }
+        .popular-package:hover::before {
+            opacity: 1;
+        }
+        @media (max-width: 480px) {
+            .popular-packages {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.5rem;
+            }
+            .popular-package {
+                padding: 0.7rem;
+                min-height: 150px;
+            }
+            .popular-package .p-cta {
+                font-size: 0.7rem;
+                padding: 6px 16px;
+                min-width: 90px;
+            }
+            .popular-package .p-price {
+                font-size: 1.1rem;
+            }
+            .popular-package .p-name {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+    
+
+    <!-- JSON‑LD Schema: TechArticle + BreadcrumbList + FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TechArticle",
+          "headline": "How to Check Airtel Airtime Balance – USSD Code & MyAirtel App Guide",
+          "description": "Learn how to check your Airtel airtime balance using USSD (*544#), the MyAirtel app, and SMS. Also covers data balance, minutes, and how to buy bundles with Okoa (Pewa) debt.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo8abLBhpjJ4R4Ieidzm2VlKWzWtIlpkbPWQ&s",
+          "author": {
+            "@type": "Organization",
+            "name": "Bingwa Sokoni Telecom Team"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Bingwa Sokoni",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://bingwasoko.co.ke/assets/logo.png"
+            }
+          },
+          "datePublished": "2026-07-04",
+          "dateModified": "2026-07-04",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://bingwasoko.co.ke/blog/how-to-check-airtel-balance.html"
+          },
+          "articleSection": "Airtel balance check, USSD codes",
+          "wordCount": "1100"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bingwasoko.co.ke/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://bingwasoko.co.ke/blog.html" },
+            { "@type": "ListItem", "position": 3, "name": "Check Airtel Balance", "item": "https://bingwasoko.co.ke/blog/how-to-check-airtel-balance.html" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the USSD code to check Airtel airtime balance?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dial *544# on your Airtel line, select 'My Account' or 'Check Balance' to see your airtime, data, and minute balances. You can also dial *544# and select 'Balance Check'."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I check my Airtel balance using the MyAirtel app?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes – open the MyAirtel app, log in, and your airtime, data, and minute balances are displayed on the home screen. You can also view detailed usage history."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I check my Airtel data balance?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dial *544# and select 'Data Balance' or 'Internet Bundles' to check your remaining data. Alternatively, use the MyAirtel app and check the data section."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I check Airtel balance via SMS?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes – send a blank SMS to 544 or 222 and you will receive an automated reply with your current airtime and data balances."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I buy bundles with Airtel Okoa (Pewa) debt?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Officially via USSD, Okoa debt blocks new purchases. However, you can buy bundles using a reseller till like 1621614, which bypasses the Okoa check and delivers your bundle instantly."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LcKDGEtAAAAAJKAWjXB7j5bSIPvzz94wBWapTD5"></script>
+        
+    <style>
+        /* Ensure floating filter bar never overlaps footer credits on any device */
+        .footer, .footer-bottom { 
+            padding-bottom: 75px !important; 
+        }
+    </style>
+    <style>
+        /* Floating Contact Buttons */
+        .floating-contact {
+            position: fixed;
+            bottom: 80px; /* Sits above the bottom filter bar */
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 999;
+        }
+        .floating-btn {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+        .floating-btn-wa {
+            background-color: #25D366; /* WhatsApp Green */
+        }
+        .floating-btn-call {
+            background-color: #009B4D; /* Safaricom Green */
+        }
+        .floating-btn svg {
+            width: 30px;
+            height: 30px;
+            fill: #fff;
+        }
+        @media (max-width: 768px) {
+            .floating-contact { bottom: 75px; right: 15px; gap: 10px; }
+            .floating-btn { width: 48px; height: 48px; }
+            .floating-btn svg { width: 26px; height: 26px; }
+        }
+    </style>
+<style>
+    .header-actions { display: flex; gap: 10px; align-items: center; margin-left: auto; }
+    .header-btn {
+        display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 40px;
+        font-size: 0.75rem; font-weight: 700; cursor: pointer; text-decoration: none; border: none;
+        transition: transform 0.2s;
+    }
+    .header-btn:hover { transform: scale(1.05); }
+    .header-btn-call { background: #009B4D; color: white; }
+    .header-btn-copy { background: #f4f7f6; color: #009B4D; border: 1px solid #009B4D; }
+    @media (max-width: 768px) {
+        .header-actions { width: 100%; justify-content: space-between; margin-top: 10px; }
+        .header-btn { font-size: 0.7rem; padding: 6px 10px; }
+    }
+</style>
+<style>
+    /* Pulse animation for the Copy Till Button */
+    @keyframes tillPulse {
+        0% { box-shadow: 0 0 0 0 rgba(0, 155, 77, 0.4); }
+        70% { box-shadow: 0 0 0 8px rgba(0, 155, 77, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(0, 155, 77, 0); }
+    }
+    .header-btn-copy {
+        animation: tillPulse 2s infinite;
+        border-width: 2px !important;
+    }
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        <span class="bingwa">Bingwa</span><span class="soko"> Sokoni</span>
+    </div>
+    <div class="tagline">The fastest way to buy bundles, even with Okoa.</div>
+    <div class="system-status">
+        <span class="pulse-dot"></span>
+        <span class="status-text">System Online • Instant Delivery</span>
+    </div>
+    <a href="https://wa.me/254732662602" class="whatsapp-icon" target="_blank" aria-label="WhatsApp Support" style="line-height:0">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.89.52 3.64 1.43 5.15L2 22l4.85-1.43A9.97 9.97 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" fill="#25D366"></path>
+            <path d="M12 6.5c-3.04 0-5.5 2.46-5.5 5.5 0 1.04.29 2.01.79 2.85L6.5 17.5l2.65-.79c.84.5 1.81.79 2.85.79 3.04 0 5.5-2.46 5.5-5.5S15.04 6.5 12 6.5z" fill="white"></path>
+        </svg>
+    </a>
+<div class="header-actions">
+    <button onclick="navigator.clipboard.writeText('1621614'); this.innerHTML='✅ Copied!'; setTimeout(() => this.innerHTML='📋 Copy Till', 2000);" class="header-btn header-btn-copy">
+        📋 Copy Till (162 161 4)
+    </button>
+    <a href="tel:+254725206054" class="header-btn header-btn-call">
+        📞 0725 206 054
+    </a>
+</div>
+</header>
+
+<div class="post-container">
+
+    <div class="breadcrumbs">
+        <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li>Check Airtel Balance</li>
+        </ol>
+    </div>
+
+    <div class="post-header">
+        <h1>How to Check Airtel Airtime Balance – USSD Code &amp; MyAirtel App Guide</h1>
+        <div class="post-meta">📅 4 July 2026 · ⏱️ 5 min read · 📝 Last updated: July 2026</div>
+    </div>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo8abLBhpjJ4R4Ieidzm2VlKWzWtIlpkbPWQ&amp;s" alt="Check Airtel balance" class="featured-image" width="800" height="450" loading="eager">
+
+    <!-- ========== TABLE OF CONTENTS ========== -->
+    <div class="table-of-contents">
+        <h3>📑 In this guide</h3>
+        <ul>
+            <li><a href="#ussd-method">Method 1: Check Balance via USSD (*544#)</a></li>
+            <li><a href="#app-method">Method 2: Check via MyAirtel App</a></li>
+            <li><a href="#sms-method">Method 3: Check via SMS</a></li>
+            <li><a href="#data-balance">How to Check Airtel Data Balance</a></li>
+            <li><a href="#minutes-balance">How to Check Airtel Minutes Balance</a></li>
+            <li><a href="#buy-with-okoa">Buy Bundles Even with Airtel Okoa (Pewa) Debt</a></li>
+            <li><a href="#faq-airtel-balance">Frequently Asked Questions</a></li>
+        </ul>
+    </div>
+
+    <!-- ========== CTA #1 – Right after TOC ========== -->
+    <a href="../index.html" class="cta-button">🔥 Buy Bundles Now – Works with Okoa</a>
+
+    <!-- ========== Soft CTA ========== -->
+    <div class="soft-cta">
+        💡 <strong>Stuck with Airtel Okoa debt?</strong> You can still buy data bundles instantly using <strong>Till 1621614</strong> – no need to clear your loan first. <a href="#buy-with-okoa" style="color:var(--safaricom); font-weight:600;">Jump to the Okoa-friendly purchase method ↓</a>
+    </div>
+
+    <div class="post-content">
+
+        <p>Knowing your Airtel airtime balance is essential to avoid running out of credit when you need it most. Whether you are on the go with no internet or prefer using the MyAirtel app, there are several quick ways to check your airtime, data, and minutes balance. This guide covers all the methods – USSD, app, SMS – and also shows you how to <strong>buy bundles even with an active Airtel Okoa (Pewa) debt</strong> using a reseller till.</p>
+    <!-- ===== POPULAR PACKAGES ===== -->
+    <div class="popular-packages">
+        <a href="../product/safaricom-1-gb-1-hour-5.html" class="popular-package safaricom">
+            <div class="p-name">1 GB</div>
+            <div class="p-price">Ksh 19</div>
+            <div class="p-validity">⏱️ 1 Hour</div>
+            <div class="p-badge">🔥 Popular</div>
+            <div class="p-cta">View Bundle →</div>
+        </a>
+        <a href="../product/safaricom-15-gb-3-hours-4.html" class="popular-package safaricom">
+            <div class="p-name">1.5 GB</div>
+            <div class="p-price">Ksh 52</div>
+            <div class="p-validity">⏱️ 3 Hours</div>
+            <div class="p-badge">⚡ Best Deal</div>
+            <div class="p-cta">View Bundle →</div>
+        </a>
+        <a href="../product/safaricom-45-mins-3-hours-17.html" class="popular-package safaricom">
+            <div class="p-name">45 Mins</div>
+            <div class="p-price">Ksh 23</div>
+            <div class="p-validity">⏱️ 3 Hours</div>
+            <div class="p-badge">📞 Best Value</div>
+            <div class="p-cta">View Bundle →</div>
+        </a>
+        <a href="../product/safaricom-100-mins-2-days-15.html" class="popular-package safaricom">
+            <div class="p-name">100 Mins</div>
+            <div class="p-price">Ksh 100</div>
+            <div class="p-validity">⏱️ Till Midnight</div>
+            <div class="p-badge">📦 Big Saver</div>
+            <div class="p-cta">View Bundle →</div>
+        </a>
+    </div>
+    <!-- ===== POPULAR PACKAGES ===== -->
+    
+    
+    <!-- ===== POPULAR PACKAGES ===== -->
+    
+    
+
+        <h2 id="ussd-method">📱 Method 1: Check Airtel Balance via USSD (*544#)</h2>
+        <p>The fastest way to check your Airtel balance is by using the USSD menu. Here is how:</p>
+        <div class="steps-box">
+            <ol>
+                <li>Dial <strong>*544#</strong> on your Airtel line.</li>
+                <li>Select <strong>My Account</strong> (usually option 1).</li>
+                <li>Choose <strong>Check Balance</strong> or <strong>Balance Enquiry</strong>.</li>
+                <li>Your airtime balance will be displayed on the screen. You will also receive an SMS confirmation.</li>
+            </ol>
+        </div>
+        <p>You can also dial <strong>*544*#</strong> directly to see your balance summary in some cases.</p>
+
+        <div class="info-box">
+            📌 <strong>Tip:</strong> You can also check your balance by dialling <strong>*131#</strong> – this is an alternative USSD code for Airtel balance checks.
+        </div>
+
+        <h2 id="app-method">📲 Method 2: Check Airtel Balance via MyAirtel App</h2>
+        <p>For a more detailed view of your account, including usage history and bundle expiry dates, use the MyAirtel app.</p>
+        <ol>
+            <li>Open the <strong>MyAirtel</strong> app and log in.</li>
+            <li>Your <strong>airtime balance</strong>, <strong>data balance</strong>, and <strong>minutes</strong> are displayed on the home screen.</li>
+            <li>Tap on <strong>Usage</strong> or <strong>My Account</strong> to see detailed history and expiry dates.</li>
+        </ol>
+        <p>The app also allows you to buy bundles, check Okoa status, and manage your account.</p>
+
+        <h2 id="sms-method">📬 Method 3: Check Airtel Balance via SMS</h2>
+        <p>If you prefer not to use USSD or the app, you can check your balance via SMS.</p>
+        <ul>
+            <li>Send a blank SMS to <strong>544</strong> or <strong>222</strong> – you will receive an automated reply with your current airtime and data balances.</li>
+            <li>You can also send <strong>BAL</strong> to <strong>544</strong> to request your balance.</li>
+        </ul>
+        <p>This method is useful if you are in an area with poor network coverage for USSD but can still send SMS.</p>
+
+        <h2 id="data-balance">📶 How to Check Airtel Data Balance</h2>
+        <p>To check your remaining data bundle:</p>
+        <ul>
+            <li><strong>USSD:</strong> Dial <strong>*544#</strong> → Select <strong>Internet Bundles</strong> → <strong>Check Balance</strong> → Your data balance will be displayed.</li>
+            <li><strong>MyAirtel App:</strong> The data balance is shown on the home screen under "Data Balance".</li>
+            <li><strong>SMS:</strong> Send <strong>DATA</strong> to <strong>544</strong> and you will receive your remaining data balance.</li>
+        </ul>
+        <p>You can also dial <strong>*544*44#</strong> to check your data balance directly.</p>
+
+        <h2 id="minutes-balance">⏱️ How to Check Airtel Minutes Balance</h2>
+        <p>To check your remaining voice minutes:</p>
+        <ul>
+            <li><strong>USSD:</strong> Dial <strong>*544#</strong> → Select <strong>My Account</strong> → <strong>Minutes Balance</strong> – your remaining minutes will be displayed.</li>
+            <li><strong>MyAirtel App:</strong> Check the "Minutes" or "Voice" section on the home screen.</li>
+            <li><strong>SMS:</strong> Send <strong>MINUTES</strong> to <strong>544</strong> to receive your minutes balance.</li>
+        </ul>
+
+        <h2 id="buy-with-okoa">🔥 How to Buy Bundles Even with Airtel Okoa (Pewa) Debt</h2>
+        <p>If you have an outstanding Airtel Okoa (Pewa) balance, buying bundles directly from Airtel via USSD (*544#) will either fail or your payment will be used to repay the loan instead of giving you data. This is where reseller tills come to the rescue.</p>
+        <p>Using a reseller till like <strong>1621614 (Bingwa Sokoni)</strong>, you can purchase data bundles, minutes, and SMS packages instantly – <strong>even if you owe Airtel Okoa</strong>. The system bypasses the Okoa check because it is a "Buy Goods" transaction, not a direct airtime top‑up. Your bundle is credited to your line, and your Okoa balance remains unchanged (you still need to repay it later).</p>
+        <p>Here is how to do it:</p>
+        <div class="steps-box">
+            <ol>
+                <li>Open M‑PESA → <strong>Lipa na M‑PESA</strong> → <strong>Buy Goods and Services</strong>.</li>
+                <li>Enter Till Number <strong onclick="navigator.clipboard.writeText('1621614'); this.innerHTML='Copied ✅'; setTimeout(() => this.innerHTML='162 161 4', 2000);" style="color: #009B4D; font-size: 1.1em; cursor: pointer; text-decoration: underline; text-decoration-style: dotted;" title="Click to copy Till Number">162 161 4</strong> <button onclick="navigator.clipboard.writeText('1621614'); this.innerHTML='✅'; setTimeout(() => this.innerHTML='📋', 2000);" style="background:none; border:none; cursor:pointer; font-size:1rem; padding:0 5px; vertical-align:middle;" title="Copy Till Number">📋</button>.</li>
+                <li>Enter the discounted amount for your chosen bundle (e.g., 19 for 1GB 1‑hour, 55 for 1 GB Tunukiwa Midnight).</li>
+                <li>Enter your M‑PESA PIN and confirm.</li>
+                <li>The bundle is delivered instantly – Okoa debt is ignored.</li>
+            </ol>
+        </div>
+        <div class="info-box">
+            💡 <strong>Example:</strong> With Ksh 53, you can get a 2GB Midnight bundle via Till 1621614 – that is 47% cheaper than the official Ksh 100 USSD price, and it works even when you have Airtel Okoa debt.
+        </div>
+
+        <!-- Comparison table: official USSD vs reseller till when you have Okoa -->
+        <div class="table-responsive">
+            <table class="comparison-table">
+                <thead>
+                    <tr><th>Method</th><th>Works with Airtel Okoa?</th><th>Price for 2GB (Midnight)</th><th>Delivery Speed</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Official USSD (*544#)</strong></td><td>❌ No (fails or repays loan)</td><td>Ksh 100</td><td>Instant (if successful)</td></tr>
+                    <tr><td><strong>Reseller Till 1621614</strong></td><td>✅ Yes (bypasses Okoa)</td><td>Ksh 53</td><td>Instant</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Using a reseller till not only saves you money but also keeps you connected even when you are paying off your Airtel Okoa loan.</p>
+
+        <div class="soft-cta">
+            🚀 <strong>Ready to buy?</strong> Use Till <strong onclick="navigator.clipboard.writeText('1621614'); this.innerHTML='Copied ✅'; setTimeout(() => this.innerHTML='162 161 4', 2000);" style="color: #009B4D; font-size: 1.1em; cursor: pointer; text-decoration: underline; text-decoration-style: dotted;" title="Click to copy Till Number">162 161 4</strong> now and get your bundle instantly – no Okoa worries. <a href="../index.html" style="color:var(--safaricom); font-weight:600;">Shop all bundles →</a>
+        </div>
+
+        <h2 id="faq-airtel-balance">❓ Frequently Asked Questions – Airtel Balance Check</h2>
+        <div class="faq-item">
+            <strong>❓ What is the USSD code to check Airtel airtime balance?</strong>
+            <p>Dial *544# on your Airtel line, select 'My Account' or 'Check Balance' to see your airtime, data, and minute balances. You can also dial *544# and select 'Balance Check'.</p>
+        </div>
+        <div class="faq-item">
+            <strong>❓ Can I check my Airtel balance using the MyAirtel app?</strong>
+            <p>Yes – open the MyAirtel app, log in, and your airtime, data, and minute balances are displayed on the home screen. You can also view detailed usage history.</p>
+        </div>
+        <div class="faq-item">
+            <strong>❓ How do I check my Airtel data balance?</strong>
+            <p>Dial *544# and select 'Data Balance' or 'Internet Bundles' to check your remaining data. Alternatively, use the MyAirtel app and check the data section.</p>
+        </div>
+        <div class="faq-item">
+            <strong>❓ Can I check Airtel balance via SMS?</strong>
+            <p>Yes – send a blank SMS to 544 or 222 and you will receive an automated reply with your current airtime and data balances.</p>
+        </div>
+        <div class="faq-item">
+            <strong>❓ Can I buy bundles with Airtel Okoa (Pewa) debt?</strong>
+            <p>Officially via USSD, Okoa debt blocks new purchases. However, you can buy bundles using a reseller till like 1621614, which bypasses the Okoa check and delivers your bundle instantly.</p>
+        </div>
+    </div>
+
+    <div class="till-box">
+        <span>Till Number: <strong>1621614</strong></span>
+        
+    </div>
+
+    <div class="trust-badge">
+        <div class="badge-icon">🛡️</div>
+        <div class="badge-text">
+            <h4>Verified Merchant</h4>
+            <p>Secure M‑PESA STK Push payments. Instant delivery – Okoa friendly.</p>
+        </div>
+    </div>
+
+    <!-- ========== CTA #2 – Bottom of page ========== -->
+    <a href="../index.html" class="cta-button">🔥 Buy Bundles Now – Works with Okoa</a>
+
+    <div class="author-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo8abLBhpjJ4R4Ieidzm2VlKWzWtIlpkbPWQ&amp;s" alt="Bingwa Sokoni editorial team" width="60" height="60">
+        <div>
+            <p><strong>Written by the Bingwa Sokoni Telecom Team</strong><br>
+            Airtel balance and bundle specialists. Verified methods and codes.<br>
+            <em>Last reviewed: 4 July 2026</em></p>
+        </div>
+    </div>
+
+    <div class="related-posts">
+        <h3>📖 You might also like</h3>
+        <ul>
+            <li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1qi8_tkzMQIwAZi0gD-dtmhquvcq0gVmmvw&amp;s" alt="Airtel Okoa guide" width="60" height="60" loading="lazy">
+                <div><a href="airtel-okoa.html">Airtel Okoa (Pewa) – Complete Guide</a></div>
+            </li>
+            <li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo8abLBhpjJ4R4Ieidzm2VlKWzWtIlpkbPWQ&amp;s" alt="Airtel bundles" width="60" height="60" loading="lazy">
+                <div><a href="airtel-amazing-bundles.html">Airtel Amazing Bundles – Full Price Guide</a></div>
+            </li>
+            <li>
+                <img src="https://linktr.ee/og/image/bingwasokoni.jpg" alt="Airtel night bundles" width="60" height="60" loading="lazy">
+                <div><a href="airtel-night-bundles.html">Airtel Night Bundles – Best for Downloads</a></div>
+            </li>
+            <li>
+                <img src="https://bingwa-sokoni-ten.tappi.ke/_next/image?url=https%3A%2F%2Ftappi-images.s3.amazonaws.com%2Fcover_photos%2Fother.jpeg&amp;w=3840&amp;q=75" alt="Buy bundles with Okoa" width="60" height="60" loading="lazy">
+                <div><a href="airtime-with-okoa.html">How to Buy Bundles with Okoa Debt</a></div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- EXACT FOOTER -->
+<footer class="footer">
+    <div class="footer-grid">
+        <div class="footer-about">
+            <h3 class="footer-logo">Bingwa<span> Sokoni</span></h3>
+            <p>Your number one stop for instant, affordable bundles. No delays, no mambo mingi.</p>
+        
+
+    
+<p style="font-size: 0.75rem; color: #888; margin-top: 10px; line-height: 1.4;">
+    Payments securely processed via M-PESA Buy Goods Till <strong onclick="navigator.clipboard.writeText('1621614'); this.innerHTML='Copied ✅'; setTimeout(() => this.innerHTML='162 161 4', 2000);" style="color: #009B4D; font-size: 1.1em; cursor: pointer; text-decoration: underline; text-decoration-style: dotted;" title="Click to copy Till Number">162 161 4</strong> (Registered Business Name: <em>Bingwa Karndy Enterprises</em>).
+</p>
+    </div>
+        <div class="footer-support">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="https://wa.me/254732662602">WhatsApp Help</a></li>
+                <li><a href="mailto:support@bingwasoko.co.ke">Email Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../faq.html">FAQs</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../terms.html">Terms of Service</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+    <div style="display: flex; flex-direction: column; gap: 6px; align-items: center; text-align: center;">
+        <p class="disclaimer" style="font-size: 0.75rem; color: #888; margin: 0;">
+            Independent reseller platform – not affiliated with Safaricom.
+        </p>
+        <p class="developer-credits" style="font-size: 0.75rem; color: #999; margin: 0;">
+            Designed & Developed by <a href="https://sarahadevelopers.co.ke" target="_blank" rel="noopener" style="color: #009B4D; text-decoration: none; font-weight: bold;">Saraha Developers Ltd</a>.
+        </p>
+        <p style="font-size: 0.75rem; color: #666; margin: 0; font-weight: 500;">
+            &copy; 2026 Bingwa Sokoni.co.ke | Built for Speed.
+        </p>
+    </div>
+</div>
+</footer>
+
+<script>
+
+</script>
+
+
+    <!-- Floating Contact Buttons -->
+        <!-- Floating Contact Buttons -->
+    <div class="floating-contact">
+        <a href="https://wa.me/254725206054" target="_blank" rel="noopener" class="floating-btn floating-btn-wa" aria-label="Chat on WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <a href="tel:+254725206054" class="floating-btn floating-btn-call" aria-label="Call Support">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </a>
+    </div>
+</body></html>
