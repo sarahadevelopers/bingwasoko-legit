@@ -174,7 +174,7 @@ if (bottomDataBtn) bottomDataBtn.addEventListener("click", () => handleBottomTyp
 if (bottomMinBtn) bottomMinBtn.addEventListener("click", () => handleBottomTypeClick("minutes"));
 if (bottomSmsBtn) bottomSmsBtn.addEventListener("click", () => handleBottomTypeClick("sms"));
 
-fetch("/products.json")
+fetch("products.json")
     .then(res => res.json())
     .then(data => {
         const raw = Array.isArray(data) ? data : (data.products || []);
