@@ -20,23 +20,23 @@ const FAQ_SCHEMA = `
       "name": "How do I buy bundles with Okoa?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can buy bundles with Okoa using Till 509947 via M-PESA Buy Goods and Services. The transaction bypasses Okoa checks and delivers bundles instantly."
+        "text": "You can buy bundles with Okoa using Till 1621614 via M-PESA Buy Goods and Services. The transaction bypasses Okoa checks and delivers bundles instantly."
       }
     },
     {
       "@type": "Question",
-      "name": "Does Till 509947 work with Okoa debt?",
+      "name": "Does Till 1621614 work with Okoa debt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes – Till 509947 bypasses Okoa debt checks. You can buy airtime, bundles, minutes, and data even with active Okoa Jahazi or Airtel Pewa debt."
+        "text": "Yes – Till 1621614 bypasses Okoa debt checks. You can buy airtime, bundles, minutes, and data even with active Okoa Jahazi or Airtel Pewa debt."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Till 509947 safe and verified?",
+      "name": "Is Till 1621614 safe and verified?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes – Till 509947 is a verified reseller till used by thousands of Kenyans. It is safe, automated, and delivers purchases instantly."
+        "text": "Yes – Till 1621614 is a verified reseller till used by thousands of Kenyans. It is safe, automated, and delivers purchases instantly."
       }
     }
   ]

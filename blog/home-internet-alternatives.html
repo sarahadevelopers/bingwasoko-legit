@@ -701,8 +701,10 @@
 </footer>
 
 <script>
-, 2000);
-}
+    setTimeout(() => {
+        const disclaimer = document.querySelector('.disclaimer');
+        if (disclaimer) disclaimer.style.display = 'none';
+    } , 2000);
 </script>
 
     <!-- Floating Contact Buttons -->

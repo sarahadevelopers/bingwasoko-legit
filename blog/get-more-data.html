@@ -976,15 +976,18 @@
             Designed & Developed by <a href="https://sarahadevelopers.co.ke" target="_blank" rel="noopener" style="color: #009B4D; text-decoration: none; font-weight: bold;">Saraha Developers Ltd</a>.
         </p>
         <p style="font-size: 0.75rem; color: #666; margin: 0; font-weight: 500;">
-            &copy; 2026 Bingwa Sokoni.co.ke | Built for Speed.
+        &copy; 2026 Bingwa Sokoni.co.ke | Built for Speed.
         </p>
     </div>
 </div>
 </footer>
 
 <script>
-, 2000);
-}
+    setTimeout(() => {
+        const disclaimer = document.querySelector('.disclaimer');
+        if (disclaimer) disclaimer.style.display = 'none';
+    } , 2000);
+
 // Smooth scroll for TOC links
 document.querySelectorAll('.table-of-contents a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {

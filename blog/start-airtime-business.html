@@ -951,7 +951,7 @@
         <div class="footer-support">
             <h4>Support</h4>
             <ul>
-                <li><a href="https://wa.me/254732662602">WhatsApp Help</a></li>
+                <li><a href="https://wa.me/254725206054">WhatsApp Help</a></li>
                 <li><a href="mailto:support@bingwasoko.co.ke">Email Us</a></li>
             </ul>
         </div>
@@ -980,8 +980,11 @@
 </footer>
 
 <script>
-, 2000);
-}
+    setTimeout(() => {
+        const disclaimer = document.querySelector('.disclaimer');
+        if (disclaimer) disclaimer.style.display = 'none';
+    } , 2000);
+
 // Smooth scroll for TOC links
 document.querySelectorAll('.table-of-contents a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {

@@ -69,7 +69,7 @@ const indexHTML = `<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BingwaSoko Blog – Cheap Bundles, Airtime & Data Guides</title>
-    <meta name="description" content="Expert tips, price comparisons, and guides to buying Safaricom and Airtel bundles cheaply. Save money with Till 509947 – Okoa friendly.">
+    <meta name="description" content="Expert tips, price comparisons, and guides to buying Safaricom and Airtel bundles cheaply. Save money with Till 1621614 – Okoa friendly.">
     <link rel="canonical" href="https://bingwasoko.co.ke/blog.html">
     <link rel="icon" type="image/webp" href="/bingwa-sokoni-favicon.webp">
     <link rel="alternate icon" href="/favicon.ico">
@@ -156,7 +156,7 @@ const indexHTML = `<!DOCTYPE html>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 BingwaSoko.co.ke | Built for Speed.</p>
-            <p class="disclaimer">Payments secured via M-PESA STK Push (Till 509947). Independent reseller platform – not affiliated with Safaricom or Airtel.</p>
+            <p class="disclaimer">Payments secured via M-PESA STK Push (Till 1621614). Independent reseller platform – not affiliated with Safaricom or Airtel.</p>
         </div>
     </footer>
 </body>
