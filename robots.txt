@@ -1,6 +1,7 @@
-# Allow all search engines to crawl the site
+# Allow all search engines
 User-agent: *
 Disallow:
 
-# Sitemap location
+# Sitemaps
 Sitemap: https://bingwasoko.co.ke/sitemap.xml
+Sitemap: https://bingwasoko.co.ke/product-sitemap.xml
