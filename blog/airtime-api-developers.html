@@ -272,7 +272,7 @@
             { "@type": "Question", "name": "Can I automate buying bundles for multiple customers at once?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, you can loop through a list of phone numbers and bundle codes, but be careful with rate limits. Implement delays to avoid overwhelming the API." } },
             { "@type": "Question", "name": "What happens if the API call fails?", "acceptedAnswer": { "@type": "Answer", "text": "You should have a fallback mechanism: retry after a few seconds, log the error, and notify your support team." } },
             { "@type": "Question", "name": "Are there any open‑source libraries for Daraja integration?", "acceptedAnswer": { "@type": "Answer", "text": "Yes – check GitHub for 'Daraja PHP' or 'Daraja Node'. Many developers have published wrappers." } },
-            { "@type": "Question", "name": "Which API option works best with Okoa Jahazi?", "acceptedAnswer": { "@type": "Answer", "text": "Reseller APIs (like Bingwa Sokonini) typically bypass Okoa restrictions, while Daraja API may fail if the customer has outstanding debt." } },
+            { "@type": "Question", "name": "Which API option works best with Okoa Jahazi?", "acceptedAnswer": { "@type": "Answer", "text": "Reseller APIs (like Bingwa Sokoni) typically bypass Okoa restrictions, while Daraja API may fail if the customer has outstanding debt." } },
             { "@type": "Question", "name": "What security practices should I follow when building an airtime API?", "acceptedAnswer": { "@type": "Answer", "text": "Never store M-PESA PINs – use STK push only. Validate phone numbers with regex, use HTTPS for all calls, implement idempotency keys to prevent double charging, and log all transactions." } }
           ]
         }
@@ -467,7 +467,7 @@
             </ul>
 
             <h2 id="option1">⚙️ Option 1 – Use a Reseller API (Quickest)</h2>
-            <p>Several Kenyan bundle resellers offer APIs (e.g., Bingwa Sokonini, other similar platforms). You send a POST request with the phone number, bundle code, and amount – and the API triggers the purchase using their automated till system.</p>
+            <p>Several Kenyan bundle resellers offer APIs (e.g., Bingwa Sokoni, other similar platforms). You send a POST request with the phone number, bundle code, and amount – and the API triggers the purchase using their automated till system.</p>
 
             <h3>Example API Request (Node.js)</h3>
             <div class="code-example">
@@ -584,7 +584,7 @@
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">Which API option works best with Okoa Jahazi?</div>
-                    <div class="faq-answer">Reseller APIs (like Bingwa Sokonini) typically bypass Okoa restrictions, while Daraja API may fail if the customer has outstanding debt.</div>
+                    <div class="faq-answer">Reseller APIs (like Bingwa Sokoni) typically bypass Okoa restrictions, while Daraja API may fail if the customer has outstanding debt.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">What security practices should I follow when building an airtime API?</div>
