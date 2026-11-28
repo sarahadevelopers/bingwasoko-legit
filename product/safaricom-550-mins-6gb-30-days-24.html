@@ -1051,15 +1051,7 @@
                             Amount: <strong>Ksh 101</strong>
                         </div>
                         <div class="buy-actions">
-                            <button class="btn-buy-large" 
-                                    data-bundle-id="{{BUNDLE_ID}}" 
-                                    data-bundle-title="1500 SMS" 
-                                    data-bundle-price="101" 
-                                    data-bundle-network="Safaricom"
-                                    data-bundle-type="{{PRODUCT_TYPE}}"
-                                    data-bundle-validity="30 Days">
-                                Buy Now
-                            </button>
+                            <button class="btn-buy-large" data-bundle-id="{{BUNDLE_ID}}" data-bundle-title="1500 SMS" data-bundle-price="101" data-bundle-network="Safaricom" data-bundle-type="{{PRODUCT_TYPE}}" data-bundle-validity="30 Days" onclick="if(typeof openPaymentModal === 'function') openPaymentModal({ id: parseInt(this.dataset.bundleId), title: this.dataset.bundleTitle, price: parseInt(this.dataset.bundlePrice), network: this.dataset.bundleNetwork, type: this.dataset.bundleType, validity: this.dataset.bundleValidity }, 'buy');">Buy Now</button>
                             <button class="btn-gift-large" 
                                     data-bundle-id="{{BUNDLE_ID}}" 
                                     data-bundle-title="1500 SMS" 
